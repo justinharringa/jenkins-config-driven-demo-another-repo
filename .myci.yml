@@ -1,6 +1,5 @@
-pipeline_template: examples/python/Jenkinsfile
+pipeline_template: examples/dynamic/Jenkinsfile
 other_config: alsoconfig
-script_to_run: |-
-  python3 -m pip install --upgrade pip
-  pip3 install -r requirements.txt
-  python3 -m pytest
+agent_label: jenkins-maven-java11
+run_me: |-
+  java -version
