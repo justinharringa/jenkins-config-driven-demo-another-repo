@@ -1,6 +1,6 @@
 pipeline_template: examples/dynamic/Jenkinsfile
 other_config: alsoconfig
 agent_label: some-other-label
-docker_container: 11.0.3-stretch
+docker_container: openjdk:11.0.3-stretch
 run_me: |-
   java -version
